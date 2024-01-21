@@ -1,6 +1,7 @@
 let text = document.getElementById("user");
 let loButton = document.getElementById("LogOutButton");
 let dateText = document.getElementById("date");
+let table = document.getElementById("tableInfo");
 
 // Get Date
 let date = new Date();
@@ -17,9 +18,17 @@ text.textContent = "Welcome " + username;
 
 dateText.textContent = `${day}/${month}/${year}`;
 
+if(username == "admin"){
+    table.style.display = "flex";
+} else {
+    table.style.display = "none";
+}
+
 function LogOut(){
     window.location.href = "index.html";
 }
 
 loButton.addEventListener("click", LogOut);
+
+
 

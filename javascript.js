@@ -2,6 +2,8 @@ let loginButton = document.getElementById("loginButton");
 let username = document.getElementById("usernameInput");
 let password = document.getElementById("passwordInput");
 let login = false;
+let userTry = 0;
+let maxTry = 3;
 
 window.SuccessfulUsername = "";
 
@@ -38,6 +40,14 @@ function GetDetails(){
         username.style.borderColor = "red";
         password.style.borderColor = "red";
         console.log("Login Failed !");
+        userTry+=1;
+        console.log("Try: " + userTry);
+    }
+
+    if(userTry >= maxTry){
+        username.value = "Forgot Password / Username?";
+        alert("Contact - 123*9*9*9*");
+        loginButton.disabled = true;
     }
 
 

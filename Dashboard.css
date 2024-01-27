@@ -75,3 +75,11 @@ td:hover {
 tr:hover {
     background-color: pink;
 }
+
+#DarkModeBox {
+    height: fit-content;
+    padding: 10px;
+    width: fit-content;
+    background: yellow;
+    border-radius: 20px;
+}

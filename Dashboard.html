@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="Dashboard.css">
+    <link rel="icon" href="Dev Logo.jpg"
 </head>
 <body>
 <h1 id="Heading"> Dashboard </h1>
@@ -19,7 +20,7 @@
     </div>
 
     <div id="OtherInfo">
-        <hr color="black" size="1">
+        <hr color="red" size="1">
 
         <table id="tableInfo">
             <tr>
@@ -35,14 +36,6 @@
                 <td>15</td>
                 <td>No</td>
 
-            </tr>
-
-            <tr>
-                <td>Karnan</td>
-                <td>karnan@</td>
-                <td>8</td>
-                <td>No</td>
-                
             </tr>
 
             <tr>
@@ -63,9 +56,13 @@
         </table>
 
         <h1 id="date" align="center"></h1>
-    </div>
-</div>
 
+        <div id="DarkModeBox"> 
+            <input id="Mode" type="checkbox">
+            <span id="toggleText">Dark Mode</span> </div>
+        </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 <script  src="Dashboard.js"></script>
     
 </body>

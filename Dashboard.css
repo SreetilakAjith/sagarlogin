@@ -8,8 +8,13 @@
 }
 
 #Heading {
-    color: blue;
+    color: white;
     letter-spacing: 2px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-image: linear-gradient(rgb(255, 20, 204), rgb(255, 166, 0));
+    font-style:oblique;
 }
 
 #date {
@@ -35,6 +40,8 @@
     background-color: red;
     color: white;
 }
+
+/*---  Table  Styles ---*/
 
 table {
     border: 2px solid black;
@@ -75,6 +82,8 @@ td:hover {
 tr:hover {
     background-color: pink;
 }
+
+/*--- (END)   Table  Styles ---*/
 
 #DarkModeBox {
     height: fit-content;
